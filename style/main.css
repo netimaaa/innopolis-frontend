@@ -382,3 +382,85 @@ body {
     background-color: black;
     border-radius: 50%;
 }
+
+/* Lab 2 */
+
+#comic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.comic__title {
+    font-size: 58px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    color: #5d5fef;
+    font-weight: bold;
+    text-shadow: #5d5fef 1px 0 10px;  
+}
+
+.comic__date {
+    padding-top: 80px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.comic__img {
+    padding-top: 30px;
+    transform: scale(1.1);
+}
+
+.comic__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 60px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s ease;
+    border: #000000 solid 2px;  
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCFCFC;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #5d5fef;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
