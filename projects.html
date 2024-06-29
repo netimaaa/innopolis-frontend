@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site portfolio</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <div class="scroll-container">
+        <div class="container" id="header">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <img src="./img/logo.svg" alt="Timur Farizunov">
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a href="projects.html" class="nav-list__link nav-list__link--active">Projects</a></li>
+                    <li class="nav-list__item"><a href="skills.html" class="nav-list__link">Skills</a></li>
+                    <li class="nav-list__item"><a href="contacts.html" class="nav-list__link">Contacts</a></li>
+                </ul>
+                <ul class="nav-contacts">
+                    <li class="nav-contacts__list">
+                        <a href="https://t.me/netimaaa" class="nav-contacts__link">
+                            <img class="contact" id="tg-link" src="./img/tg.svg" alt="Telegram">
+                        </a>
+                    </li>
+                    <li class="nav-contacts__list">
+                        <a href="https://github.com/netimaaa" class="nav-contacts__link">
+                            <img class="contact" id="gh-link" src="./img/gh.svg" alt="GitHub">
+                        </a>
+                    </li>
+                    <li class="nav-contacts__list">
+                        <a href="https://discord.gg/GsSMF8rsNk" class="nav-contacts__link">
+                            <img class="contact" id="ds-link" src="./img/ds.svg" alt="Discord">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <header class="header">
+                <div class="header__content">
+                    <h1 class="header__title">Hi, my name is <span class="header__title-name">Timur</span></h1>
+                    <div class="header__subtitle">I’m a student of Innopolis University</div>
+                    <button type="button" class="btn" id="scrollToProjects">
+                        <span class="btn__text">My projects</span>
+                        <span class="btn__icon">
+                            <img src="./img/btn.svg" alt="" class="btn-image">
+                        </span>
+                    </button>
+                </div>
+            </header>
+        </div>
+        <div class="container" id="projects">
+            <div class="projects">
+                <h1 class="project__title">Project</h1>
+                <div class="project__list-row1">
+                    <a href="comic.html" class="project__list-row1__item">
+                        <div class="project__list-row1__item__image"><img src="./img/comic.png" alt=""></div>
+                        <div class="project__list-row1__item__text">Lab 2 - XKCD comic</div>
+                    </a>
+                    <a href="#" class="project__list-row1__item">
+                        <div class="project__list-row1__item__image"><img src="./img/project_image.png" alt=""></div>
+                        <div class="project__list-row1__item__text">Some information</div>
+                    </a>
+                    <a href="#" class="project__list-row1__item">
+                        <div class="project__list-row1__item__image"><img src="./img/project_image.png" alt=""></div>
+                        <div class="project__list-row1__item__text">Some information</div>
+                    </a>
+                </div>
+                <div class="project__list-row2">
+                    <a href="#" class="project__list-row1__item">
+                        <div class="project__list-row1__item__image"><img src="./img/project_image.png" alt=""></div>
+                        <div class="project__list-row1__item__text">Some information</div>
+                    </a>
+                    <a href="#" class="project__list-row1__item">
+                        <div class="project__list-row1__item__image"><img src="./img/project_image.png" alt=""></div>
+                        <div class="project__list-row1__item__text">Some information</div>
+                    </a>
+                    <a href="#" class="project__list-row1__item">
+                        <div class="project__list-row1__item__image"><img src="./img/project_image.png" alt=""></div>
+                        <div class="project__list-row1__item__text">Some information</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="info">Some information</div>
+                    <div class="info-copyright">Some copyright</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./dist/bundle.js"></script>
+</body>
+</html>
