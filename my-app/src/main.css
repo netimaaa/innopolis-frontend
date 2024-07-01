@@ -403,6 +403,10 @@ body {
     text-shadow: #5d5fef 1px 0 10px;  
 }
 
+.comic {
+    text-align: center;
+}
+
 .comic__date {
     padding-top: 80px;
     font-weight: bold;

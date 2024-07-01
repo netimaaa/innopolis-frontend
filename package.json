@@ -1,12 +1,5 @@
 {
-  "devDependencies": {
-    "date-fns": "^3.6.0",
-    "ts-loader": "^9.5.1",
-    "typescript": "^5.5.2",
-    "webpack": "^5.92.1",
-    "webpack-cli": "^5.1.4"
-  },
-  "scripts": {
-    "build": "webpack"
+  "dependencies": {
+    "date-fns": "^3.6.0"
   }
 }
